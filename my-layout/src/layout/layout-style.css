@@ -1,0 +1,58 @@
+.website-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.sidebar-container {
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+header,
+footer,
+nav,
+main {
+    padding: 20px;
+}
+
+header,
+footer {
+    background-color: #ccc;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333; /* Menu item text color */
+}
+
+.menu li a:hover {
+    background-color: rgb(221, 221, 221); /* Background color on hover */
+    color: rgb(19, 16, 16); /* Text color on hover */
+}
+
+.menu li a.active {
+    background-color: #ddd; /* Background color for active menu item */
+    color: #fff; /* Text color for active menu item */
+}
+
+main {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
